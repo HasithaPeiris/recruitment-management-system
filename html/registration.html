@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Registration form</title></head>
+<link rel="stylesheet" href="../css/registration.css">
+<link rel="icon" type="image/x-icon" href="../images/aboutUs/favicon.png">
+<script src="../js/registration.js"></script>
+<body>
+	<div class="registrationbox">
+		<div class="title" >Registration form</div>
+		<form action="#">
+		<div class="user-details">
+		
+		<div class="input-box">
+		<span class="details">First Name</span>
+		<input type="text" placeholder="Enter your First Name " required >
+		</div>
+		
+		<div class="input-box">
+		<span class="details"> Last Name</span>
+		<input type="text" placeholder="Enter your Last Name " required >
+		</div>
+		
+		<div class="input-box">
+		<span class="details">Mobile Number</span>
+		<input type="text" placeholder="Enter your Mobile Number " required >
+		</div>
+		
+		<div class="input-box">
+		<span class="details">Email</span>
+		<input type="text" placeholder="Enter your Email " required >
+		</div>
+		
+		<div class="input-box">
+		<span class="details">Address</span>
+		<input type="text" placeholder="Enter your current Address " required >
+		</div>
+		
+		<div class="input-box">
+		<span class="details">Date Of Birth</span>
+		<input type="date" id="details" name="trip-start" placeholder="Enter your Birth day " required >
+		</div>
+		
+		<div class="input-box">
+		<span class="details">Password</span>
+		<input type="password" placeholder="Enter your Password " required >
+		</div>
+		
+		<div class="input-box">
+		<span class="details">Confirm Password</span>
+		<input type="password" placeholder="Confirm your Password " required >
+		</div>
+		
+		</div>
+		
+		<div class="gender-details">
+		<input type="radio" name="gender" id="dot-1">
+		<input type="radio" name="gender" id="dot-2">
+		
+		<span class="gender-title">Gender</span>
+		<div class="category">
+		
+			<label for="dot-1">
+				<span class="dot one"></span>
+				<span class="gender">Male</span>
+			</label>
+			
+			<label for="dot-2">
+				<span class="dot two"></span>
+				<span class="gender">Female</span>
+			</label>
+			
+		</div>
+		<div class="input-box">
+		<label>Please select your role</label>
+		   <div class="user-details">
+		   <select>
+				<option value="">Select your role</option>
+				<option value="employee">
+				<span class="details">Employee</span>
+				</option>
+				<option value="employer">
+				<span class="details">Employer</span>
+				</option>
+		   </select>
+		   </div>
+		</div>
+		
+		<div class="check">
+		
+		<input type="checkbox"><span class="check">Accept privacy policy and terms</span>
+		</div>
+		<div class="button">
+            <a href="../php/register.php"><input type="submit" value="Register" ></a>
+		</div>
+		
+		</div>
+		
+		</form>
+	</div>
+
+</body>
+</html>

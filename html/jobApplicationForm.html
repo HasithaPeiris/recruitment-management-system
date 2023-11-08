@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../css/jobApplicationFormStyle.css">
+    <link rel="icon" type="image/x-icon" href="../images/aboutUs/favicon.png">
+	<title> Job Application Form </title>
+</head>
+<body>
+	<div class="applicationbox">
+		<div class="title" ><h2>Job Application Form</h2></div>
+	    <form class="form" action="#">
+		<div class="applicant-details">
+			<p><strong>Personal Information</strong></p><br>
+			<div class="input-box" >
+				First Name: <input type="text" name="fname" placeholder="Enter your First Name" required></input><br>
+				Last Name:  <input type="text" name="lname" placeholder="Enter your Last Name" required></input><br>
+				Middle Name: <input type="text" name="mname" placeholder="Enter your Middle Name" required></input><br>
+			</div>
+		</div>
+		
+		
+		<div class="applicant-details">
+			<table>
+			<div class="input-box" >
+				<tr>
+					<span class="details"><td>Current Address</td></span>
+					<span class="details"><td>Permanat Address</td></span>
+				</tr>
+				<tr>
+					
+					<td><textarea rows="10" cols="30" name="currentaddress" placeholder="type your Current Address..." required></textarea></td>
+					<td><textarea rows="10" cols="30" name="permanataddress" placeholder="type your Permanat Address..." required></textarea></td>
+					
+				</tr> 
+		
+			</div>
+			</table>
+		</div>
+		<br>
+		
+		<div class="applicant-details">
+			<div class="input-box" >
+				<p><strong>Phone:</strong></p>
+				<span class="details">Home Phone:</span>
+				<input type="number" name="phone number" size="30" maxlength="4" placeholder="Enter your Number" required>
+			</div>
+		</div>
+		
+		<br><br>
+		
+		<div class="applicant-details">
+			<div class="input-box" >
+				<span class="details">E-mail: </span>
+				<input type="E-mail" name="email" placeholder="email address" required>
+			</div>
+		</div>
+		
+		<div class="applicant-details">
+			<div class="choose-box" >
+				<span class="details">upload cv : </span>
+				<input type="file" name="cv" required>
+			</div>
+		</div>
+		
+		<hr>
+		<div class="desired-details">
+			<input type="radio" name="desired" id="dot-1" required>
+			<input type="radio" name="desired" id="dot-2" required>
+			<input type="radio" name="desired" id="dot-3" required>			
+				<strong>Employment Desired</strong>
+				<span class="desired-title"><p><strong>Position:</strong></p></span>
+			 <div class="category">
+						
+						<label for="dot-1">
+							<span class="dot one"></span>
+							<span class="desired">Manager:</span> 
+						</label>
+						<label for="dot-2">
+							<span class="dot two"></span>
+							<span class="desired">Secretary: </span>
+						</label>
+						<label for="dot-3">
+							<span class="dot three"></span>
+							<span class="desired">Security: </span>
+						</label>
+			
+			</div>
+		</div>	
+		<br>
+		<div class="current-details">
+			<input type="radio" name="current" id="dots-1" required>
+			<input type="radio" name="current" id="dots-2" required>
+				<span class="current-title"><p><strong>Are you currently employed:</strong></p></span>
+				<div class="categories">
+					
+					<label for="dots-1">
+					<span class="dots one"></span>
+						<span class="current">Yes:</span>
+					</label>
+					<label for="dots-2">
+					<span class="dots two"></span>
+						<span class="current">No: </span>
+					</label>
+				</div>
+		</div>
+		<br>
+		
+		<div class="applicant-details">
+			<div class="date" >
+				<span class="details"><strong>Start Date:</strong></span>
+				<input type="date" name="start date" required>
+			</div>
+		</div>
+		<hr>
+		<div class="day-details">
+			<input type="checkbox" name="day" id="ck-1" required>
+			<input type="checkbox" name="day" id="ck-2" required>
+			<input type="checkbox" name="day" id="ck-3" required>
+			<input type="checkbox" name="day" id="ck-4" required>
+			<input type="checkbox" name="day" id="ck-5" required>
+				<span class="day-title"><strong>Availability</strong></span>
+				<div class="category">
+				
+					<label for="ck-1">
+						<span class="ck one"></span>
+						<span class="current">Monday: </span>
+					</label>
+					<label for="ck-2">
+						<span class="ck two"></span>
+						<span class="current">Tuesday:</span>
+					</label>
+					<label for="ck-3">
+						<span class="ck three"></span>
+						<span class="current">Wednesday:</span>
+					</label>
+					<label for="ck-4">
+						<span class="ck four"></span>
+						<span class="current">Thursday:</span>
+					</label>
+					<label for="ck-5">
+						<span class="ck five"></span>
+						<span class="current">Friday: </span>
+					</label>
+					
+				</div>
+		</div>
+		
+		<hr>
+		<div class="button">
+		Submit: <input type="submit" name="submit" required>
+		</div>
+	  </form>
+	</div>
+</body>
+</html>

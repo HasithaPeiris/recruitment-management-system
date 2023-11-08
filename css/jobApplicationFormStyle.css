@@ -1,0 +1,345 @@
+body{
+	display: flex;
+	height: 200vh;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background: linear-gradient(to right,#0B0B45,#06038D);	
+}
+.applicationbox{
+	max-width: 700px;
+	width: 100%;
+	background: lightblue;
+	padding: 25px 30px;
+	border-radius: 5px;
+	border: 5px solid black;
+}
+.date {
+	margin: left;
+	width: 25px;
+}
+.applicationbox .title{
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+	
+}
+.applicationbox .title::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background: linear-gradient(to right,#0B0B45,#06038D);
+}
+/*.applicationbox form .applicant-details{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+}*/
+form .applicant-details .input-box{
+	
+	margin-bottom: 5px;
+	width: calc(100% / 2 - 20px);
+
+}
+
+.applicant-details .input-box .details{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.applicant-details .input-box input{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width:2px;
+	transition: all 0.3s ease;
+}
+
+.applicant-details .choose-box input{
+	height: 20px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	font-size: 16px;
+	border-bottom-width:2px;
+	transition: all 0.3s ease;
+}
+
+.applicant-details .input-box input:focus,
+.applicant-details .input-box input:valid{
+	border-color: #06038D;
+}
+form .desired-details .desired-title{
+	font-size: 20px;
+	font-weight: 500;
+}
+form .desired-details .category{
+	display: flex;
+	width: 40%;
+	margin: 14px 0;
+	justify-content: space-between;
+}
+.desired-details .category label{
+	display: flex;
+	align-items: center;
+}
+.desired-details .category .dot{
+	height: 6px;
+	width: 6px;
+	background: black;
+	border-radius: 50%;
+	margin-right: 4px;
+	border: 4px solid #fff;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+	border-color: #06038D;
+	background: lightblue;
+}
+
+
+
+form .current-details .current-title{
+	font-size: 20px;
+	font-weight: 500;
+}
+form .current-details .categories{
+	display: flex;
+	width: 40%;
+	margin: 14px 0;
+	justify-content: space-between;
+}
+.current-details .categories label{
+	display: flex;
+	align-items: center;
+}
+.current-details .categories .dots{
+	height: 6px;
+	width: 6px;
+	background: black;
+	border-radius: 50%;
+	margin-right: 4px;
+	border: 4px solid #fff;
+}
+#dots-1:checked ~ .categories label .one,
+#dots-2:checked ~ .categories label .two{
+	border-color: #06038D;
+	background: lightblue;
+}
+form input[type="radio"]{
+	display: none;
+}
+form input[type="checkbox"]{
+	display: none;
+}
+
+
+form .day-details .day-title{
+	font-size: 20px;
+	font-weight: 500;
+}
+form .day-details .category{
+	display: flex;
+	width: 40%;
+	margin: 14px 0;
+	justify-content: space-between;
+}
+.day-details .category label{
+	display: flex;
+	align-items: center;
+}
+.day-details .category .ck{
+	height: 6px;
+	width: 6px;
+	background: black;
+	border-radius: 25%;
+	margin-right: 4px;
+	border: 4px solid #fff;
+}
+#ck-1:checked ~ .category label .one,
+#ck-2:checked ~ .category label .two,
+#ck-3:checked ~ .category label .three,
+#ck-4:checked ~ .category label .four,
+#ck-5:checked ~ .category label .five{
+	border-color: #06038D;
+	background: lightblue;
+}
+
+
+form .button{
+	height: 45px;
+	margin: 45px 0;
+}
+
+form .button input{
+	height: 100%;
+	width:100%;
+	outline: none;
+	color: lightblue;
+	border:none;
+	font-size: 18px;
+	font-weight:500;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background: #fff;
+}
+form .button input:hover{
+	background:#06038D;
+}
+@media (max-width:584px){
+	.applicationbox{
+		max-width: 100%;
+	}
+
+	form .applicant-details .input-box{
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	form .desired-details .category {
+		width: 100%;
+	}
+	form .current-details .categories {
+		width: 100%;
+	}
+	form .day-details .category {
+		width: 100%;
+	}
+	.applicationbox form.applicant-details{
+		max-height: 300;
+		overflow-y: scroll;
+	}
+	.applicant-details::webkit-scrollbar{
+		width: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.input-box{
+	margin-left: 50px;
+	margin-right: 50px;
+	align-content: center;
+	
+}*/
