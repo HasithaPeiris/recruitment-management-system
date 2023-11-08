@@ -1,41 +1,91 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/employee_dashboard/favicon.png"
+    />
+    <title>Employee Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/employee_dashboard.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../images/employee_dashboard/favicon.png">
-	<title>Employee Dashboard</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-	<link rel="stylesheet" href="../css/employee_dashboard.css">
+  <body>
+    <section id="menu">
+      <div class="search">
+        <img id="png" src="../images/employee_dashboard/search.png" />
+        <input type="text" placeholder="Search" />
+      </div>
 
-</head>
+      <div class="items">
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/home.png" /><a
+            href="#"
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/employee.png" /><a
+            href="#"
+            >Profile</a
+          >
+        </li>
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/company.png" /><a
+            href="#"
+            >Applied Jobs</a
+          >
+        </li>
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/vacancy.png" /><a
+            href="#"
+            >Saved Jobs</a
+          >
+        </li>
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/calendar.png" /><a
+            href="#"
+            >Messages</a
+          >
+        </li>
+        <li>
+          <img
+            id="menuImg"
+            src="../images/employee_dashboard/selection.png"
+          /><a href="#">Notifications</a>
+        </li>
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/reject.png" /><a
+            href="#"
+            >Exams</a
+          >
+        </li>
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/exam.png" /><a
+            href="#"
+            >Interviews</a
+          >
+        </li>
+        <li>
+          <img id="menuImg" src="../images/employee_dashboard/report.png" /><a
+            href="#"
+            >Settings</a
+          >
+        </li>
+        <a href="job_listing.html" target="_blank"
+          ><button id="menuButton" type="button">Apply Now</button></a
+        >
+      </div>
+    </section>
 
-<body>
-	
-	<section id="menu">
-		<div class="search">
-			<img id="png" src="../images/employee_dashboard/search.png">
-            <input type="text" placeholder="Search">
-		</div>
-		
-		<div class="items">
-			<li><img id="menuImg" src="../images/employee_dashboard/home.png"><a href="#">Dashboard</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/employee.png"><a href="#">Profile</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/company.png"><a href="#">Applied Jobs</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/vacancy.png"><a href="#">Saved Jobs</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/calendar.png"><a href="#">Messages</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/selection.png"><a href="#">Notifications</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/reject.png"><a href="#">Exams</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/exam.png"><a href="#">Interviews</a></li>
-			<li><img id="menuImg" src="../images/employee_dashboard/report.png"><a href="#">Settings</a></li>
-            <a href="job_listing.html" target="_blank"><button id="menuButton" type="button">Apply Now</button></a>
-		</div>
-	</section>
-    
-	
-	<section id="interface">
-<!--		<div class="navigation">
+    <section id="interface">
+      <!--		<div class="navigation">
 			<div class="n1">
 				<div class="search">
 					<img id="png" src="images/search.png">
@@ -49,403 +99,624 @@
 				<img class="proi" src="images/user7.jpg" alt="">
 			</div>
 		</div> -->
-		
-	<!--	<h3 class="i-name">
+
+      <!--	<h3 class="i-name">
 			Dashboard
 		</h3> -->
-        
-        <div class="blocks">
-            
-            <div class="sub_blocks">
-                <div class="values">
-                    <div class="val-box">
-                        <img class="v-svg" src="../images/employee_dashboard/company.png">
-                        <div>
-                            <h3>10</h3>
-                            <span>Applied Jobs</span>
-                        </div>
-                    </div>
-                    <div class="val-box">
-                        <img class="v-svg" src="../images/employee_dashboard/exam.png">
-                        <div>
-                            <h3>8</h3>
-                            <span>Examinations</span>
-                        </div>
-                    </div>
-                    <div class="val-box">
-                        <img class="v-svg" src="../images/employee_dashboard/employee.png">
-                        <div>
-                            <h3>5</h3>
-                            <span>Interviews</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <h4 class="v-name">Saved Jobs</h4>
-                
-                <div class="vacancies">
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job1.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Cook</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job2.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Developer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job2.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Engineer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                </div>
-                <div class="vacancies">
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job4.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Cook</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job5.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Developer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job1.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Engineer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                </div>
-                <div class="vacancies">
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job4.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Developer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job5.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Cook</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                    <a href="job_landing.html" target="_blank">
-                    <div class="job">
-                        <div class="job-image">
-                            <img class="cover" src="../images/employee_dashboard/job1.jpg">
-                        </div>
-                        <div class="job-info">
-                            <h3>Job Vacancy for a Engineer</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star2.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                            <img class="star" src="../images/employee_dashboard/star1.svg">
-                        </div>
-                    </div></a>
-                </div>
+
+      <div class="blocks">
+        <div class="sub_blocks">
+          <div class="values">
+            <div class="val-box">
+              <img
+                class="v-svg"
+                src="../images/employee_dashboard/company.png"
+              />
+              <div>
+                <h3>10</h3>
+                <span>Applied Jobs</span>
+              </div>
             </div>
-    
-            <div class="board">
-                <table width="100%">
-                    <thead>
-                        <tr class="chatbox">
-                            <td>CHAT BOX</td>
-                            <td></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user1.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user2.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>7.45 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user3.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user4.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user5.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user6.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user6.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user6.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user6.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                        <tr class="chatbar">
-                            <td class="people">
-                               <img src="../images/employee_dashboard/user6.jpg" alt="">
-                                <div class="people-de">
-                                    <h5>John Doe</h5>
-                                    <p>john@website.com</p>
-                                </div>
-                            </td>
-
-                            <td class="active">
-                                <h5>Last Seen</h5>
-                                <p>9.51 PM</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="val-box">
+              <img class="v-svg" src="../images/employee_dashboard/exam.png" />
+              <div>
+                <h3>8</h3>
+                <span>Examinations</span>
+              </div>
             </div>
+            <div class="val-box">
+              <img
+                class="v-svg"
+                src="../images/employee_dashboard/employee.png"
+              />
+              <div>
+                <h3>5</h3>
+                <span>Interviews</span>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="v-name">Saved Jobs</h4>
+
+          <div class="vacancies">
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job1.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Cook</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job2.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Developer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job2.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Engineer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+          </div>
+          <div class="vacancies">
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job4.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Cook</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job5.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Developer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job1.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Engineer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+          </div>
+          <div class="vacancies">
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job4.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Developer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job5.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Cook</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+            <a href="job_landing.html" target="_blank">
+              <div class="job">
+                <div class="job-image">
+                  <img
+                    class="cover"
+                    src="../images/employee_dashboard/job1.jpg"
+                  />
+                </div>
+                <div class="job-info">
+                  <h3>Job Vacancy for a Engineer</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star2.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                  <img
+                    class="star"
+                    src="../images/employee_dashboard/star1.svg"
+                  />
+                </div></div
+            ></a>
+          </div>
         </div>
-	</section>
-    
-        <div class="navigation">
-			<div class="n1">
-				<div class="logo">
-					<img src="../images/employee_dashboard/logo.png" alt="">
-				</div>
-			</div>
-			
-			<div class="profile">
-				<img id="png" src="../images/employee_dashboard/bell.png">
-				<img id="png" src="../images/employee_dashboard/email.png">
-				<img class="proi" src="../images/employee_dashboard/user7.jpg" alt="">
-			</div>
-		</div>
-    
+
+        <div class="board">
+          <table width="100%">
+            <thead>
+              <tr class="chatbox">
+                <td>CHAT BOX</td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user1.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user2.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>7.45 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user3.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user4.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user5.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user6.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user6.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user6.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user6.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+              <tr class="chatbar">
+                <td class="people">
+                  <img src="../images/employee_dashboard/user6.jpg" alt="" />
+                  <div class="people-de">
+                    <h5>John Doe</h5>
+                    <p>john@website.com</p>
+                  </div>
+                </td>
+
+                <td class="active">
+                  <h5>Last Seen</h5>
+                  <p>9.51 PM</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div class="navigation">
+      <div class="n1">
+        <div class="logo">
+          <img src="../images/employee_dashboard/logo.png" alt="" />
+        </div>
+      </div>
+
+      <div class="profile">
+        <img id="png" src="../images/employee_dashboard/bell.png" />
+        <img id="png" src="../images/employee_dashboard/email.png" />
+        <img class="proi" src="../images/employee_dashboard/user7.jpg" alt="" />
+      </div>
+    </div>
+
     <footer class="page-footer">
-        <div class="row">
-            
-            <div class="cols">
-                
-            <div class="col">
-                <a href="../index.html"><img src="../images/employee_dashboard/footer_logo.png" alt="Recruitment image" class="flogo"></a>
-                <p><br>Cloud Recruitment performs the recruitment process automatically. Job seekers and client companies can directly involved with the process. This system has introduced several special features to facilitate the recruitment process.</p>
-            </div>
-            
-            <div class="col">
-                <h3>office <div class="underline"><office><span></span></office></div></h3>
-                <p><br>"Cloud Recruitment"</p>
-                <p>New Kandy Rd,</p>
-                <p>Malabe,</p>
-                <p>Sri Lanka</p>
-                <p class="email">info@cloudrecruitment.net</p>
-                <h4 style="color: #f4f4f4;">+94 71 271 3624</h4>
-            </div>  
+      <div class="row">
+        <div class="cols">
+          <div class="col">
+            <a href="../index.php"
+              ><img
+                src="../images/employee_dashboard/footer_logo.png"
+                alt="Recruitment image"
+                class="flogo"
+            /></a>
+            <p>
+              <br />Cloud Recruitment performs the recruitment process
+              automatically. Job seekers and client companies can directly
+              involved with the process. This system has introduced several
+              special features to facilitate the recruitment process.
+            </p>
+          </div>
 
-            <div class="col">
-                <h3>Links<div class="underline"><office><span></span></office></div></h3>
-                <ul class="links">
-                    <li><a href="../index.html"><br>Home</a></li>
-                    <li><a href="../html/services.html">Services</a></li>
-                    <li><a href="../html/aboutUs.html">About Us</a></li>
-                    <li><a href="../html/job_listing.html">Jobs</a></li>
-                    <li><a href="../html/contactUs.html">Contacts</a></li>
-                </ul>
-            </div>
+          <div class="col">
+            <h3>
+              office
+              <div class="underline">
+                <office><span></span></office>
+              </div>
+            </h3>
+            <p><br />"Cloud Recruitment"</p>
+            <p>New Kandy Rd,</p>
+            <p>Malabe,</p>
+            <p>Sri Lanka</p>
+            <p class="email">info@cloudrecruitment.net</p>
+            <h4 style="color: #f4f4f4">+94 71 271 3624</h4>
+          </div>
 
-            <div class="col">
-                <h3>Newsletter<div class="underline"><office><span></span></office></div></h3>
-                <form class="submit_form">
-                    <br><input type="email" placeholder="Enter your email" required>
-                    <input class="submit_btn" type="submit" value="Submit">
-                </form>
-                <div class="social-icon">
-                    <a href="https://www.facebook.com/"><img src="../images/employee_dashboard/facebook.png"></a>
-                    <a href="https://www.youtube.com/"><img src="../images/employee_dashboard/instagram.png"></a>
-                    <a href="https://www.whatsapp.com/"><img src="../images/employee_dashboard/twitter.png"></a>
-                    <a href="https://www.instagram.com/"><img src="../images/employee_dashboard/youtube.png"></a>
-                    <a href="https://www.teitter.com/"><img src="../images/employee_dashboard/linkedin.png"></a>
-                </div>
+          <div class="col">
+            <h3>
+              Links
+              <div class="underline">
+                <office><span></span></office>
+              </div>
+            </h3>
+            <ul class="links">
+              <li>
+                <a href="../index.php"><br />Home</a>
+              </li>
+              <li><a href="../html/services.html">Services</a></li>
+              <li><a href="../html/aboutUs.html">About Us</a></li>
+              <li><a href="../html/job_listing.html">Jobs</a></li>
+              <li><a href="../html/contactUs.html">Contacts</a></li>
+            </ul>
+          </div>
 
+          <div class="col">
+            <h3>
+              Newsletter
+              <div class="underline">
+                <office><span></span></office>
+              </div>
+            </h3>
+            <form class="submit_form">
+              <br /><input
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+              <input class="submit_btn" type="submit" value="Submit" />
+            </form>
+            <div class="social-icon">
+              <a href="https://www.facebook.com/"
+                ><img src="../images/employee_dashboard/facebook.png"
+              /></a>
+              <a href="https://www.youtube.com/"
+                ><img src="../images/employee_dashboard/instagram.png"
+              /></a>
+              <a href="https://www.whatsapp.com/"
+                ><img src="../images/employee_dashboard/twitter.png"
+              /></a>
+              <a href="https://www.instagram.com/"
+                ><img src="../images/employee_dashboard/youtube.png"
+              /></a>
+              <a href="https://www.teitter.com/"
+                ><img src="../images/employee_dashboard/linkedin.png"
+              /></a>
             </div>
-            </div>
+          </div>
         </div>
-        <p class="cpy">© 2022 Cloud Recruitment All Rights Reserved</p>
+      </div>
+      <p class="cpy">© 2022 Cloud Recruitment All Rights Reserved</p>
     </footer>
-	
-</body>
-
+  </body>
 </html>
