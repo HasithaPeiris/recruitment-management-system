@@ -13,7 +13,7 @@
         <div class="nav_row">
         <a href="#"><img src="images/aboutUs/logo.png" alt="Recruitment image" class="logo"></a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="html/job_listing.html">Jobs</a></li>
             <li><a href="html/services.html">Services</a></li>
             <li><a href="html/contactUs.html">Contact</a></li>
@@ -67,7 +67,7 @@
             <div class="col">
                 <h3>Links<div class="underline"><office><span></span></office></div></h3>
                 <ul class="links">
-                    <li><a href="index.html"><br>Home</a></li>
+                    <li><a href="index.php"><br>Home</a></li>
                     <li><a href="html/services.html">Services</a></li>
                     <li><a href="html/aboutUs.html">About Us</a></li>
                     <li><a href="html/job_listing.html">Jobs</a></li>
